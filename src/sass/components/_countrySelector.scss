@@ -1,0 +1,86 @@
+@use '../abstracts/variables' as *;
+
+.selector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 2rem;
+  line-height: 1.5rem;
+}
+
+.selector__heading {
+  font-size: $font-size-heading;
+  margin: 0;
+}
+
+.selector__current {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.selector__menu {
+  width: 100%;
+}
+
+.selector__collapsible {
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  outline: none;
+  border-top: 1px solid $gray-lighter;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  font-family: inherit;
+  font-size: $font-size-main;
+  padding: 0.7rem 0.5rem;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.selector__collapsible:active {
+  background-color: $gray-lightest;
+}
+
+.selector__collapsible:after {
+  content: '\002B';
+  color: #000;
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+.selector__content {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 25px;
+}
+
+.none {
+  display: none;
+}
+
+.selector__country {
+  padding: 8px 0;
+}
+
+.selector__flag-icon {
+  margin-right: 0.6rem;
+  cursor: pointer;
+}
+
+.selector__name {
+  cursor: pointer;
+}
+
+.selector__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 200;
+  background-color: rgba(0, 0, 0, 0.6);
+}

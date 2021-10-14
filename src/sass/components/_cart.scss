@@ -1,0 +1,51 @@
+@use '../abstracts/variables' as *;
+
+.cart-page {
+  margin: 0 2rem;
+  min-height: calc(100vh - 223px);
+}
+
+.cart-page h1 {
+  font-size: $font-size-heading;
+}
+
+.cart-page table {
+  table-layout: auto;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.cart-page--total td {
+  padding-top: 2rem;
+}
+
+.cart-page--order td {
+  padding-top: 0.5rem;
+}
+
+.place-order {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  padding: 8px 16px;
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  border-radius: 2px;
+  font-family: inherit;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.place-order:hover {
+  background-color: #fff;
+  color: #000;
+  font-weight: 600;
+  border: 1px solid #000;
+}
+
+@media screen and (min-width: 850px) {
+  .cart-page table {
+    width: 80%;
+    margin: 2rem auto;
+  }
+}

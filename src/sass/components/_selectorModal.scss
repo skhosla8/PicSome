@@ -1,0 +1,77 @@
+@use '../abstracts/variables' as *;
+
+.country__modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  z-index: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  font-family: $font-main;
+  font-size: 1.1rem;
+
+  @media (max-width: 600px) {
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+  }
+
+  &__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: $font-logo;
+  }
+
+  &__context {
+    margin-top: -0.4rem;
+  }
+
+  &__flag {
+    margin-right: 0.6rem;
+  }
+
+  &__text {
+    margin: 3rem 0;
+  }
+
+  &__button {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 8px 46px;
+    border: 1px solid rgba(0, 0, 0, 0.9);
+    border-radius: 2px;
+    text-align: center;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.1rem;
+
+    &:hover {
+      background-color: #fff;
+      color: #000;
+      font-weight: 600;
+      border: 1px solid #000;
+    }
+  }
+
+  &__disclaimer {
+    background-color: $gray-lightest;
+    font-size: 0.8rem;
+    padding: 0 0.5rem;
+  }
+
+  a {
+    text-decoration: underline;
+    margin: 1rem 0;
+  }
+
+  i {
+    vertical-align: middle;
+  }
+}

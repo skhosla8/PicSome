@@ -1,0 +1,149 @@
+@use '../abstracts/variables' as *;
+
+.header {
+  font-family: $font-logo;
+  font-size: $font-size-logo;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  height: 145px;
+  background-color: #fff;
+  border-bottom: 0.5px solid $gray-lightest;
+
+  .header-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background-color: #000;
+    color: #fff;
+    font-family: $font-main;
+    font-size: $font-size-main;
+  }
+
+  .div1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    margin: 0 1.5rem;
+    background-color: #fff;
+
+    a {
+      color: #000;
+    }
+
+    i {
+      vertical-align: middle;
+    }
+
+    .group-left {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .group-right {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+
+      i {
+        font-size: 1.8rem;
+      }
+
+      .flag-icon {
+        margin: 0 0.3rem;
+        font-size: 1.2rem;
+        vertical-align: middle;
+      }
+
+      .heart-icon {
+        margin: 0 0.3rem;
+        cursor: pointer;
+
+        &--red {
+          color: $red-primary;
+        }
+      }
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      cursor: pointer;
+      font-size: 1.1rem;
+    }
+
+    .search {
+      display: flex;
+      align-items: center;
+      background-color: $gray-lightest;
+      border-radius: 25px;
+      padding: 0.5rem 1rem;
+      margin-left: 20px;
+      width: 40vw;
+
+      i {
+        color: $gray-dark;
+        padding-right: 0.4rem;
+      }
+
+      input {
+        font-family: $font-main;
+        font-size: $font-size-main;
+        outline: none;
+        background-color: $gray-lightest;
+        border: none;
+        width: 40vw;
+
+        &::-webkit-search-cancel-button {
+          -webkit-appearance: none;
+        }
+      }
+
+      @media screen and (max-width: 550px) {
+        width: 30vw;
+        margin-left: 15px;
+
+        input {
+          width: 25vw;
+        }
+      }
+    }
+
+    .cart-icon-group {
+      margin-right: -16px;
+    }
+
+    .cart-icon {
+      cursor: pointer;
+      vertical-align: middle;
+    }
+
+    .fa-stack {
+      position: relative;
+      top: -8px;
+      left: -17px;
+      font-size: 0.7rem;
+
+      .fa-circle {
+        font-size: 1.4rem;
+      }
+    }
+
+    .cart-count {
+      font-size: 0.8rem;
+      color: $blue-primary;
+      vertical-align: middle;
+    }
+
+    @media screen and (max-width: 600px) {
+      margin: 0 1rem;
+    }
+  }
+}

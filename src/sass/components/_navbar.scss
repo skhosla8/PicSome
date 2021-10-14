@@ -1,0 +1,27 @@
+@use '../abstracts/variables' as *;
+
+.navbar {
+  font-family: $font-main;
+  font-size: $font-size-navbar;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 50px;
+  margin: 0 2rem;
+}
+
+.navbar a {
+  color: $gray-dark;
+  line-height: 10px;
+  border-bottom: 2px solid #fff;
+}
+
+.navbar a:hover {
+  color: #000;
+}
+
+.navbar .active {
+  color: #000;
+  border-bottom: 2px solid #000;
+}

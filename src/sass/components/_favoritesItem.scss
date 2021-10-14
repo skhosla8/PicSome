@@ -1,0 +1,62 @@
+@use '../abstracts/variables' as *;
+
+.favorites__grid__item {
+  display: flex;
+  flex-direction: column;
+  font-size: $font-size-main;
+  padding: 10px;
+  border: 1px solid $gray-lighter;
+
+  div:first-of-type {
+    position: relative;
+
+    i {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0.4rem;
+      background-color: #fff;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  img {
+    align-self: center;
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+  }
+
+  p {
+    font-family: $font-heading;
+    margin: 0;
+
+    &:first-of-type {
+      margin: 1rem 0;
+    }
+
+    &:last-of-type {
+      margin-bottom: 1rem;
+    }
+  }
+
+  button {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #fff;
+      color: #000;
+      font-weight: 600;
+    }
+  }
+}
