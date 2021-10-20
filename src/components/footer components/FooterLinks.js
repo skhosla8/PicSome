@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 function FooterLinks() {
   const handleDealsClick = () => {
-    window.open('/best-deals', '_blank');
+    window.open('https://skhosla8.github.io/picsome/#/picsome/best-deals', '_blank', 'noopener');
   };
 
   return (

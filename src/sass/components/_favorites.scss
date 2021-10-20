@@ -5,6 +5,10 @@
   min-height: calc(100vh - 223px);
   font-size: $font-size-main;
 
+  @media (max-width: 500px) {
+    margin: 0 1rem;
+  }
+
   h1,
   h2 {
     font-size: $font-size-heading;

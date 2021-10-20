@@ -5,4 +5,8 @@
   grid-gap: 6px;
   grid-auto-flow: dense;
   margin: 2rem 2rem;
+
+  @media (max-width: 500px) {
+    margin: 2rem 1rem;
+  }
 }

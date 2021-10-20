@@ -9,6 +9,10 @@
   align-items: flex-end;
   height: 50px;
   margin: 0 2rem;
+
+  @media (max-width: 500px) {
+    margin: 0 1rem;
+  }
 }
 
 .navbar a {

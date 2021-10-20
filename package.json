@@ -1,6 +1,6 @@
 {
   "name": "pic-some-app",
-  "homepage": "https://myusername.github.io/",
+  "homepage": "https://myusername.github.io/picsome/",
   "version": "0.1.0",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",

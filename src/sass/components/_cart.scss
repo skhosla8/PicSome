@@ -3,6 +3,10 @@
 .cart-page {
   margin: 0 2rem;
   min-height: calc(100vh - 223px);
+
+  @media (max-width: 500px) {
+    margin: 0 1rem;
+  }
 }
 
 .cart-page h1 {
